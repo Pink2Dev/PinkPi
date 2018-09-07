@@ -14,9 +14,10 @@ find "/var/log/" -type f -exec cp /dev/null {} \;
 rm -fR "$HOME/.ssh"
 
 # Delete any wallet configuration
+rm "$HOME/.pink2/*.log"
+rm "$HOME/.pink2/peers.dat"
 rm "$HOME/.pink2/pinkconf.txt"
-
-# Delete any wallet file
+rm "$HOME/.pink2/stake.dat"
 rm "$HOME/.pink2/wallet.dat"
 
 # Reset to static network
