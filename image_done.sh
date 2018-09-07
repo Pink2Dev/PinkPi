@@ -14,7 +14,8 @@ find "/var/log/" -type f -exec cp /dev/null {} \;
 rm -fR "$HOME/.ssh"
 
 # Delete any wallet configuration
-rm "$HOME/.pink2/*.log"
+rm "$HOME/.pink2/db.log"
+rm "$HOME/.pink2/debug.log"
 rm "$HOME/.pink2/peers.dat"
 rm "$HOME/.pink2/pinkconf.txt"
 rm "$HOME/.pink2/stake.dat"
